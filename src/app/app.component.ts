@@ -5,5 +5,11 @@ import { Component } from '@angular/core';
   templateUrl: 'app.component.html'
 })
 export class AppComponent {
+  
   title = 'bookstore-ui';
+  opened = true;
+  
+  toggle() {
+    this.opened = !this.opened;
+  }
 }

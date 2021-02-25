@@ -11,6 +11,8 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatButtonModule } from '@angular/material/button';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import {MatListModule} from '@angular/material/list';
+import {MatTableModule} from '@angular/material/table';
+
 
 
 @NgModule({
@@ -23,8 +25,10 @@ import {MatListModule} from '@angular/material/list';
     MatMenuModule,
     MatIconModule,
     MatSidenavModule,
-    MatListModule],
-  exports: [MatListModule, MatButtonModule, MatCheckboxModule, MatToolbarModule, MatInputModule, MatProgressSpinnerModule, MatCardModule, MatMenuModule, MatIconModule, MatSidenavModule]
+    MatListModule,
+    MatTableModule
+  ],
+  exports: [MatTableModule, MatListModule, MatButtonModule, MatCheckboxModule, MatToolbarModule, MatInputModule, MatProgressSpinnerModule, MatCardModule, MatMenuModule, MatIconModule, MatSidenavModule]
 })
 
 

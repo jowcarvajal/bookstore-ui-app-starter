@@ -9,13 +9,17 @@ import { HeaderComponent } from './components/templates/header/header.component'
 import { MaterialModule } from 'src/app/shared/modules/material.module';
 import { FooterComponent } from './components/templates/footer/footer.component';
 import { NavComponent } from './components/templates/nav/nav.component';
+import { HomeComponent } from './components/view/home/home.component';
+import { CategoriaListComponent } from './components/view/categoria-list/categoria-list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    NavComponent
+    NavComponent,
+    HomeComponent,
+    CategoriaListComponent
   ],
   imports: [
     BrowserModule,

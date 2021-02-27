@@ -6,4 +6,8 @@
 table {
     width: 95%;
   }
+
+.mat-column-acoes{
+    width: 5rem;   
+  }
   

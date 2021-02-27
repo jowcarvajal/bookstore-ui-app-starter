@@ -2,6 +2,8 @@
     <mat-card-title class="title">title</mat-card-title>
     <mat-card-subtitle class="subtitle">subtitle</mat-card-subtitle>
 
+    <button mat-stroked-button>new</button>
+
     <table mat-table [dataSource]="categorias">
         <ng-container matColumnDef="id">
             <th mat-header-cell *matHeaderCellDef> ID </th>
@@ -15,9 +17,20 @@
             <th mat-header-cell *matHeaderCellDef> DESCRICAO </th>
             <td mat-cell *matCellDef="let row"> {{row.descricao}} </td>
         </ng-container>
-        <ng-container matColumnDef="acoes">
+        <ng-container matColumnDef="livros">
+            <th mat-header-cell *matHeaderCellDef> LIVROS </th>
+            <td mat-cell *matCellDef="let row"> 
+                <a href="#">
+                    <mat-icon>book</mat-icon>    
+                </a>
+            </td>
+        </ng-container>
+        <ng-container class="mat-column-acoes" matColumnDef="acoes">
             <th mat-header-cell *matHeaderCellDef> ACOES </th>
-            <td mat-cell *matCellDef="let row"> {{row.acoes}} </td>
+            <td mat-cell *matCellDef="let row">
+                <mat-icon>edit</mat-icon>    
+                <mat-icon>delete</mat-icon>    
+            </td>
         </ng-container>
         <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
         <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>

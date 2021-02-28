@@ -30,4 +30,8 @@ export class CategoriaListComponent implements OnInit {
     this.router.navigate(["categoria/create"])
   }
 
+  delete() {
+    
+  }
+
 }

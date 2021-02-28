@@ -14,6 +14,8 @@ import { HomeComponent } from './components/view/home/home.component';
 import { CategoriaListComponent } from './components/view/categoria-list/categoria-list.component';
 import { HttpClientModule } from '@angular/common/http';
 import { CategoriaCreateComponent } from './components/view/categoria-create/categoria-create.component';
+import { CategoriaDeleteComponent } from './components/view/categoria-delete/categoria-delete.component';
+import { CategoriaUpdateComponent } from './components/view/categoria-update/categoria-update.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,9 @@ import { CategoriaCreateComponent } from './components/view/categoria-create/cat
     NavComponent,
     HomeComponent,
     CategoriaListComponent,
-    CategoriaCreateComponent
+    CategoriaCreateComponent,
+    CategoriaDeleteComponent,
+    CategoriaUpdateComponent
   ],
   imports: [
     BrowserModule,

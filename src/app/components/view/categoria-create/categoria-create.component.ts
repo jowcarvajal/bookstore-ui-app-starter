@@ -11,8 +11,8 @@ import { Router } from '@angular/router';
 export class CategoriaCreateComponent implements OnInit {
 
   categoria: Categoria = {
-    nome: 'AI',
-    descricao: 'Inteligencia Artificial'
+    nome: '',
+    descricao: ''
   }
 
   constructor(private service: CategoriaService, private router: Router) { }
@@ -22,9 +22,12 @@ export class CategoriaCreateComponent implements OnInit {
 
   create(): void {
     this.service.create(this.categoria).subscribe((response) => {
-      console.log(response);
       this.router.navigate(['categoria']);
       this.service.message('Categoria Criada','OK');
     });
+  }
+
+  cancel(){
+    this.router.navigate(['categoria']);
   }
 }

@@ -1,6 +1,6 @@
 <mat-card class="card mat-elevation-z4">
-    <mat-card-title class="title">CREATE</mat-card-title>
-    <mat-card-subtitle class="subtitle">CATEGORIA</mat-card-subtitle>
+    <mat-card-title class="title">UPDATE</mat-card-title>
+    <mat-card-subtitle class="subtitle">UPDATE</mat-card-subtitle>
 
     <form >
         <mat-form-field class="form-field">
@@ -12,7 +12,7 @@
             <textarea rows="5" [(ngModel)]="categoria.descricao" matInput type="text" name="descricao" placeholder="descicao"></textarea>
         </mat-form-field>
         <div class="button">
-            <button (click)="create()" mat-stroked-button color="primary">save</button>
+            <button (click)="update()" mat-stroked-button color="primary">update</button>
             <button (click)="cancel()" mat-stroked-button color="warn">cancel</button>
         </div>
     </form>

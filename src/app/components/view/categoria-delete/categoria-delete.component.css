@@ -1,0 +1,17 @@
+.card{
+    width: 95%;
+    margin: 1rem auto;
+}
+
+form {
+    text-align: center;
+    width: 95%;
+}
+.form-field{
+    width: 100%;
+}
+
+.button{
+    width: 100%;
+    text-align: start;
+}

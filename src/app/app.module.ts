@@ -13,6 +13,7 @@ import { NavComponent } from './components/templates/nav/nav.component';
 import { HomeComponent } from './components/view/home/home.component';
 import { CategoriaListComponent } from './components/view/categoria-list/categoria-list.component';
 import { HttpClientModule } from '@angular/common/http';
+import { CategoriaCreateComponent } from './components/view/categoria-create/categoria-create.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { HttpClientModule } from '@angular/common/http';
     FooterComponent,
     NavComponent,
     HomeComponent,
-    CategoriaListComponent
+    CategoriaListComponent,
+    CategoriaCreateComponent
   ],
   imports: [
     BrowserModule,
